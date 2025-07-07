@@ -1,5 +1,12 @@
-function App() {
-	return <h1>Hello Word!</h1>
-}
+import { Toaster } from '@/components/ui/sonner'
+import { RouterProvider } from 'react-router'
+import { router } from './routes'
 
-export default App
+export function App() {
+	return (
+		<>
+			<Toaster richColors />
+			<RouterProvider router={router} />
+		</>
+	)
+}
